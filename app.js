@@ -1,3 +1,93 @@
+(async () => {
+const escapeHTML = (value = '') => String(value).replace(/[&<>"]/g, (character) => ({
+  '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;',
+}[character]));
+const safeUrl = (value = '') => /^(https?:\/\/|\/?assets\/)/i.test(String(value)) ? escapeHTML(value) : '';
+const managedContent = await fetch(`content/site.json?v=${Date.now()}`)
+  .then((response) => response.ok ? response.json() : null)
+  .catch(() => null);
+
+if (managedContent) {
+  const announcement = managedContent.announcement || {};
+  const posterTrackElement = document.querySelector('[data-poster-track]');
+  if (posterTrackElement && Array.isArray(managedContent.posters)) {
+    const announcementTitle = escapeHTML(announcement.title || 'СКОРО АНОНС').replace(' ', '<br>');
+    posterTrackElement.innerHTML = `
+      <figure class="poster-slide active" data-poster-slide>
+        <div class="poster-announcement" aria-label="Скоро анонс нового концерта ANDRAW">
+          <span>${escapeHTML(announcement.eyebrow || 'ANDRAW · LIVE')}</span>
+          <strong>${announcementTitle}</strong><i aria-hidden="true"></i>
+          <div class="poster-announcement-action"><small>${escapeHTML(announcement.location || '')}</small>
+            <a class="poster-cta" href="${safeUrl(announcement.url)}" target="_blank" rel="noreferrer">${escapeHTML(announcement.button || 'Узнать первым')} <b>↗</b></a>
+          </div>
+        </div>
+        <figcaption><b>${escapeHTML(announcement.date || '')}</b><span>${escapeHTML(announcement.subtitle || '')}</span></figcaption>
+      </figure>
+      ${managedContent.posters.map((poster) => `
+        <figure class="poster-slide" data-poster-slide>
+          <img src="${safeUrl(poster.image)}" alt="${escapeHTML(poster.alt || poster.title)}" loading="lazy">
+          <figcaption><b>${escapeHTML(poster.date)}</b><span>${escapeHTML(poster.title)}</span></figcaption>
+        </figure>`).join('')}`;
+    const counter = document.querySelector('[data-poster-current]')?.parentElement;
+    if (counter) counter.innerHTML = `<b data-poster-current>01</b> / ${String(managedContent.posters.length + 1).padStart(2, '0')}`;
+  }
+
+  const photoTrackElement = document.querySelector('[data-photo-track]');
+  if (photoTrackElement && Array.isArray(managedContent.photos)) {
+    photoTrackElement.innerHTML = managedContent.photos.map((photo, index) => `
+      <figure class="photo-slide${photo.format && photo.format !== 'landscape' ? ` photo-slide--${escapeHTML(photo.format)}` : ''}${index === 0 ? ' active' : ''}" data-photo-slide>
+        <img src="${safeUrl(photo.image)}" alt="${escapeHTML(photo.alt || photo.title)}" loading="lazy">
+        <figcaption><b>${escapeHTML(photo.date)}</b><span>${escapeHTML(photo.title)}</span></figcaption>
+      </figure>`).join('');
+    const counter = document.querySelector('[data-photo-current]')?.parentElement;
+    if (counter) counter.innerHTML = `<b data-photo-current>01</b> / ${String(managedContent.photos.length).padStart(2, '0')}`;
+  }
+
+  const renderTrack = (track, index, isLive = false) => `
+    <button class="track${isLive ? ' live-track' : index >= 5 ? ' track-extra' : ''}" type="button" data-title="${escapeHTML(track.sortTitle || track.title)}"${track.cover ? ` data-cover="${safeUrl(track.cover)}"` : ''} data-audio="${safeUrl(track.audio)}">
+      <span class="track-cover${isLive ? ' live-cover' : ''}"><img src="${safeUrl(track.cover)}" alt="${escapeHTML(track.title)}" loading="lazy">${isLive ? `<b>${String(index + 1).padStart(2, '0')}</b>` : ''}</span><i class="track-play">▶</i>
+      <span class="track-copy"><strong>${escapeHTML(track.title)}</strong><small>${escapeHTML(track.subtitle)}</small></span><span class="track-type">${escapeHTML(track.meta)}</span><span class="track-progress"><i></i></span>
+    </button>`;
+  const releaseList = document.querySelector('#releases-panel .tracklist');
+  if (releaseList && Array.isArray(managedContent.releases)) releaseList.innerHTML = managedContent.releases.map((track, index) => renderTrack(track, index)).join('');
+  const liveList = document.querySelector('#live-panel .tracklist');
+  if (liveList && Array.isArray(managedContent.live)) liveList.innerHTML = managedContent.live.map((track, index) => renderTrack(track, index, true)).join('');
+
+  const videoTrackElement = document.querySelector('[data-video-track]');
+  if (videoTrackElement && Array.isArray(managedContent.videos)) {
+    videoTrackElement.innerHTML = managedContent.videos.map((video, index) => `
+      <article class="video-slide${index === 0 ? ' active' : ''}" data-video-slide>
+        <div class="video-media"><video poster="${safeUrl(video.poster)}" playsinline preload="none" data-src="${safeUrl(video.video)}"></video>
+          <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+        </div>
+        <div class="video-caption"><b>${escapeHTML(video.title)}</b><span>${escapeHTML(video.subtitle)}</span></div>
+      </article>`).join('');
+    const counter = document.querySelector('[data-video-current]')?.parentElement;
+    if (counter) counter.innerHTML = `<b data-video-current>01</b> / ${String(managedContent.videos.length).padStart(2, '0')}`;
+  }
+
+  const about = managedContent.about || {};
+  const aboutFans = document.querySelector('.about-yandex b');
+  const aboutLead = document.querySelector('.about-lead');
+  const aboutDescription = document.querySelector('.about-text p');
+  const aboutVocal = document.querySelector('.cosmic-language-copy');
+  const aboutDetails = document.querySelector('.artist-details div');
+  if (aboutFans && about.fans) aboutFans.textContent = about.fans;
+  if (aboutLead && about.lead) aboutLead.textContent = about.lead;
+  if (aboutDescription && about.description) aboutDescription.textContent = about.description;
+  if (aboutVocal && about.vocal) aboutVocal.innerHTML = `<span>Авторский вокал</span>${escapeHTML(about.vocal)}`;
+  if (aboutDetails) aboutDetails.innerHTML = `<p>${escapeHTML(about.details || '')}</p><p>${escapeHTML(about.instruments || '')}</p>`;
+
+  const contact = managedContent.contact || {};
+  const contactMap = { Telegram: contact.telegram, VKontakte: contact.vk, YouTube: contact.youtube, Instagram: contact.instagram };
+  document.querySelectorAll('.contact-links a').forEach((link) => {
+    const label = link.textContent.replace('↗', '').trim();
+    if (contactMap[label]) link.href = safeUrl(contactMap[label]);
+  });
+  const contactButton = document.querySelector('.contact-mail');
+  if (contactButton && contact.telegram) contactButton.href = safeUrl(contact.telegram);
+}
+
 const body = document.body;
 const loader = document.querySelector('.loader');
 const menuButton = document.querySelector('.menu-orb');
@@ -362,19 +452,6 @@ photoTrack?.addEventListener('scroll', () => {
 }, { passive: true });
 
 const videoTrack = document.querySelector('[data-video-track]');
-if (videoTrack) {
-  const videoOrder = [12, 11, 3, 10, 17, 9, 13, 14, 15, 16, 8, 4, 7, 6, 5, 2, 1];
-  const videoRank = new Map(videoOrder.map((number, index) => [number, index]));
-  [...videoTrack.querySelectorAll('[data-video-slide]')]
-    .sort((a, b) => {
-      const getNumber = (slide) => Number(slide.querySelector('video')?.dataset.src.match(/live-(\d+)/)?.[1] || 0);
-      return (videoRank.get(getNumber(a)) ?? 999) - (videoRank.get(getNumber(b)) ?? 999);
-    })
-    .forEach((slide, index) => {
-    slide.classList.toggle('active', index === 0);
-    videoTrack.append(slide);
-    });
-}
 const videoSlides = [...document.querySelectorAll('[data-video-slide]')];
 const videoCounter = document.querySelector('[data-video-current]');
 const videoProgress = document.querySelector('[data-video-progress]');
@@ -597,3 +674,4 @@ const resetCarouselPositions = () => {
 };
 resetCarouselPositions();
 window.addEventListener('load', () => window.requestAnimationFrame(resetCarouselPositions), { once: true });
+})();

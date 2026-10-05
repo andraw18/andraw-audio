@@ -1,0 +1,150 @@
+media:
+  input: assets
+  output: /assets
+
+content:
+  - name: site-content
+    label: Контент сайта ANDRAW
+    type: file
+    path: content/site.json
+    fields:
+      - name: announcement
+        label: Карточка «Скоро анонс»
+        type: object
+        fields:
+          - { name: eyebrow, label: Верхняя подпись, type: string }
+          - { name: title, label: Заголовок, type: string }
+          - { name: location, label: Место и год, type: string }
+          - { name: date, label: Подпись даты, type: string }
+          - { name: subtitle, label: Дополнительный текст, type: string }
+          - { name: button, label: Текст кнопки, type: string }
+          - { name: url, label: Ссылка кнопки, type: string }
+
+      - name: posters
+        label: Афиши
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{date} · {title}"
+        fields:
+          - name: image
+            label: Изображение афиши
+            type: image
+            required: true
+            options: { path: media/event-archive, extensions: [jpg, jpeg, png, webp], rename: true }
+          - { name: date, label: Дата, type: string, required: true, description: "Например: 19.09.2026" }
+          - { name: title, label: Название и место, type: string, required: true }
+          - { name: alt, label: Описание изображения, type: string, description: "Коротко опишите афишу для поисковиков" }
+
+      - name: photos
+        label: Фотографии
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{date} · {title}"
+        fields:
+          - name: image
+            label: Фотография
+            type: image
+            required: true
+            options: { path: media/photos, extensions: [jpg, jpeg, png, webp], rename: true }
+          - { name: date, label: Дата, type: string }
+          - { name: title, label: Подпись, type: string, required: true }
+          - { name: alt, label: Описание изображения, type: string }
+          - name: format
+            label: Формат карточки
+            type: select
+            options:
+              values:
+                - { name: portrait, label: Вертикальная }
+                - { name: editorial, label: Редакционная }
+                - { name: landscape, label: Горизонтальная }
+
+      - name: releases
+        label: Музыка — релизы
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title} · {meta}"
+        fields:
+          - { name: title, label: Название на сайте, type: string, required: true }
+          - { name: sortTitle, label: Полное название для сортировки, type: string, required: true }
+          - { name: subtitle, label: Подпись, type: string }
+          - { name: meta, label: Год и длительность, type: string }
+          - name: cover
+            label: Обложка
+            type: image
+            options: { path: music, extensions: [jpg, jpeg, png, webp], rename: true }
+          - { name: audio, label: Ссылка на аудиофрагмент, type: string, required: true }
+
+      - name: live
+        label: Музыка — Live и импровизации
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title} · {meta}"
+        fields:
+          - { name: title, label: Название, type: string, required: true }
+          - { name: sortTitle, label: Полное название, type: string, required: true }
+          - { name: subtitle, label: Подпись, type: string }
+          - { name: meta, label: Длительность, type: string }
+          - name: cover
+            label: Обложка
+            type: image
+            options: { path: music/live, extensions: [jpg, jpeg, png, webp], rename: true }
+          - name: audio
+            label: Аудиофайл
+            type: file
+            required: true
+            options: { path: music/live, categories: [audio], rename: true }
+
+      - name: videos
+        label: Видео
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title} · {subtitle}"
+        fields:
+          - { name: title, label: Название, type: string, required: true }
+          - { name: subtitle, label: Подпись, type: string }
+          - name: poster
+            label: Превью
+            type: image
+            required: true
+            options: { path: media/video-posters, extensions: [jpg, jpeg, png, webp], rename: true }
+          - name: video
+            label: Видеофайл
+            type: file
+            required: true
+            options: { path: media/videos, categories: [video], rename: true }
+
+      - name: about
+        label: О музыканте
+        type: object
+        fields:
+          - { name: fans, label: Суперфаны в Яндекс Музыке, type: string }
+          - { name: lead, label: Главная строка, type: string }
+          - { name: description, label: Основное описание, type: text }
+          - { name: vocal, label: Авторский вокал, type: text }
+          - { name: details, label: Подробнее об артисте, type: text }
+          - { name: instruments, label: Инструменты, type: string }
+
+      - name: contact
+        label: Социальные сети
+        type: object
+        fields:
+          - { name: telegram, label: Telegram, type: string }
+          - { name: vk, label: VKontakte, type: string }
+          - { name: youtube, label: YouTube, type: string }
+          - { name: instagram, label: Instagram, type: string }
+
+settings:
+  content:
+    merge: true
+  commits:
+    message: "Обновление сайта через админку"
