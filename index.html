@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261001-14">
+  <link rel="stylesheet" href="styles.css?v=20261005-1">
 </head>
 <body>
   <div class="loader" aria-hidden="true">
@@ -40,14 +40,25 @@
     <span></span><span></span><span></span>
   </button>
   <nav class="menu-panel" aria-label="Навигация">
-    <a href="#home"><small>00</small>Главная</a>
-    <a href="#events"><small>01</small>Афиша</a>
-    <a href="#tracks"><small>02</small>Музыка</a>
-    <a href="#videos"><small>03</small>Видео</a>
-    <a href="#about"><small>04</small>О музыканте</a>
-    <a href="#photos"><small>05</small>Фото</a>
-    <a href="#comic"><small>06</small>Комиксы</a>
-    <a href="#contact"><small>07</small>Связаться</a>
+    <div class="menu-intro">
+      <img src="assets/site/mask.svg" alt="">
+      <p>Музыка земли<br>и космоса</p>
+      <span>Москва · 2026</span>
+    </div>
+    <div class="menu-links">
+      <a href="#home"><small>00</small><span>Главная</span><i>↘</i></a>
+      <a href="#events"><small>01</small><span>Афиша</span><i>↘</i></a>
+      <a href="#tracks"><small>02</small><span>Музыка</span><i>↘</i></a>
+      <a href="#videos"><small>03</small><span>Видео</span><i>↘</i></a>
+      <a href="#about"><small>04</small><span>О музыканте</span><i>↘</i></a>
+      <a href="#photos"><small>05</small><span>Фото</span><i>↘</i></a>
+      <a href="#comic"><small>06</small><span>Комиксы</span><i>↘</i></a>
+      <a href="#contact"><small>07</small><span>Связаться</span><i>↘</i></a>
+    </div>
+    <div class="menu-meta">
+      <a href="https://music.yandex.ru/artist/12118164" target="_blank" rel="noreferrer">Яндекс Музыка ↗</a>
+      <a href="https://t.me/andraw_theme" target="_blank" rel="noreferrer">Telegram ↗</a>
+    </div>
   </nav>
 
   <main>
@@ -69,9 +80,14 @@
 
       <p class="hero-tagline" aria-label="Музыка земли и космоса">
         <span>Музыка</span>
-        <span>земли и</span>
-        <span>космоса</span>
+        <span>земли и космоса</span>
       </p>
+
+      <a class="hero-about-link" href="#about">
+        <small>04 / ANDRAW</small>
+        <span>О музыканте</span>
+        <i>↘</i>
+      </a>
 
       <img class="hero-logo" src="assets/site/logo-andraw.webp" alt="ANDRAW">
       <div class="hero-scroll" aria-hidden="true"><i></i><span>scroll</span></div>
