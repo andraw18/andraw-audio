@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Комиксы ANDRAW — визуальные истории релизов Cosmic Voyager и Shanti.">
+  <title>ANDRAW — комиксы релизов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Onest:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="comics.css">
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"><i></i></div>
+  <canvas class="starfield" aria-hidden="true"></canvas>
+
+  <header class="comic-header">
+    <a class="wordmark" href="index.html" aria-label="ANDRAW — главная">ANDRAW</a>
+    <span>visual stories / 2025—2026</span>
+    <a class="back-link" href="index.html">← на главную</a>
+  </header>
+
+  <main>
+    <section class="comic-hero" id="top">
+      <div class="hero-copy">
+        <p><span>04 истории</span><span>38 страниц</span></p>
+        <h1>COMICS</h1>
+        <div class="hero-bottom">
+          <b>Музыка становится<br>визуальной историей.</b>
+          <a href="#chapters">выбрать главу ↓</a>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <img src="assets/site/comic-panel.png" alt="Фрагмент комикса ANDRAW Cosmic Voyager">
+        <figcaption>Cosmic Voyager · chapter 01</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter-index" id="chapters" aria-label="Главы комикса">
+      <div class="chapter-index-label"><span>Архив историй</span><b>Выберите главу</b></div>
+      <div class="chapter-tabs" data-chapter-tabs></div>
+    </section>
+
+    <section class="reader" id="reader">
+      <div class="reader-head">
+        <div class="reader-number" data-reader-number>01 / 04</div>
+        <div class="reader-title">
+          <p data-reader-series>Cosmic Voyager</p>
+          <h2 data-reader-title>Глава 1</h2>
+        </div>
+        <div class="reader-actions">
+          <button class="sound-button" type="button" data-sound-button aria-label="Включить саундтрек">
+            <i></i><span>саундтрек</span>
+          </button>
+          <a data-release-link href="https://band.link/cosmicvoyager" target="_blank" rel="noreferrer">слушать релиз ↗</a>
+        </div>
+      </div>
+
+      <div class="page-stream" data-page-stream aria-live="polite"></div>
+
+      <div class="chapter-pagination">
+        <button type="button" data-previous-chapter>← предыдущая</button>
+        <span data-pagination-title>Cosmic Voyager · Глава 1</span>
+        <button type="button" data-next-chapter>следующая →</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="comic-footer">
+    <div>
+      <span>История продолжается в музыке</span>
+      <a href="index.html#tracks">слушать ANDRAW ↗</a>
+    </div>
+    <a class="footer-wordmark" href="index.html">ANDRAW</a>
+  </footer>
+
+  <audio data-comic-audio preload="metadata"></audio>
+
+  <dialog class="lightbox" data-lightbox>
+    <button class="lightbox-close" type="button" data-lightbox-close aria-label="Закрыть">×</button>
+    <button class="lightbox-arrow previous" type="button" data-lightbox-previous aria-label="Предыдущая страница">←</button>
+    <img src="" alt="Страница комикса в полном размере" data-lightbox-image>
+    <span data-lightbox-count></span>
+    <button class="lightbox-arrow next" type="button" data-lightbox-next aria-label="Следующая страница">→</button>
+  </dialog>
+
+  <script src="comics.js"></script>
+</body>
+</html>

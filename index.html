@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="ANDRAW — музыка земли и космоса. Флейты, бубен, горловое пение, ханги и вокал.">
+  <title>ANDRAW — музыка земли и космоса</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261001-14">
+</head>
+<body>
+  <div class="loader" aria-hidden="true">
+    <img src="assets/site/mask.svg" alt="">
+    <span>ANDRAW</span>
+  </div>
+
+  <div class="scroll-tint" aria-hidden="true"></div>
+  <div class="ambient-light" aria-hidden="true"></div>
+  <canvas class="starfield" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="header-brand" href="#home" aria-label="ANDRAW — на главную">
+      <img src="assets/site/mask.svg" alt="">
+    </a>
+    <nav class="header-nav" aria-label="Основная навигация">
+      <a href="#events">Афиша</a>
+      <a href="#tracks">Музыка</a>
+      <a href="#videos">Видео</a>
+      <a href="#about">Об артисте</a>
+      <a href="#photos">Фото</a>
+      <a href="#comic">Комиксы</a>
+    </nav>
+    <a class="header-contact" href="#contact">Связаться ↘</a>
+  </header>
+
+  <button class="menu-orb" type="button" aria-label="Открыть меню" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="menu-panel" aria-label="Навигация">
+    <a href="#home"><small>00</small>Главная</a>
+    <a href="#events"><small>01</small>Афиша</a>
+    <a href="#tracks"><small>02</small>Музыка</a>
+    <a href="#videos"><small>03</small>Видео</a>
+    <a href="#about"><small>04</small>О музыканте</a>
+    <a href="#photos"><small>05</small>Фото</a>
+    <a href="#comic"><small>06</small>Комиксы</a>
+    <a href="#contact"><small>07</small>Связаться</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-platforms">
+        <a class="metro-link" href="https://art.mosmetro.ru/mus/participants/102897375" target="_blank" rel="noreferrer">#музыкавметро</a>
+        <a class="yandex-link" href="https://music.yandex.ru/artist/12118164" target="_blank" rel="noreferrer" aria-label="ANDRAW на Яндекс Музыке">
+          <img src="assets/site/logo-yandex-music.webp" alt="Яндекс Музыка">
+        </a>
+        <a class="bandlink-link" href="https://band.link/andraw" target="_blank" rel="noreferrer" aria-label="ANDRAW на BandLink">
+          <img src="assets/site/logo-bandlink.svg" alt="BandLink">
+        </a>
+      </div>
+
+      <div class="hero-portraits" aria-hidden="true">
+        <div class="hero-mask"><img src="assets/site/hero-mask.webp" alt=""></div>
+        <div class="hero-face"><img src="assets/site/hero-face.webp" alt=""></div>
+      </div>
+
+      <p class="hero-tagline" aria-label="Музыка земли и космоса">
+        <span>Музыка</span>
+        <span>земли и</span>
+        <span>космоса</span>
+      </p>
+
+      <img class="hero-logo" src="assets/site/logo-andraw.webp" alt="ANDRAW">
+      <div class="hero-scroll" aria-hidden="true"><i></i><span>scroll</span></div>
+    </section>
+
+    <section class="events section" id="events">
+      <div class="section-line">
+        <span>01</span>
+        <p>Афиша</p>
+        <div class="slider-count"><b data-poster-current>01</b> / 10</div>
+      </div>
+
+      <div class="poster-carousel reveal" data-poster-carousel>
+        <div class="poster-track" data-poster-track>
+          <figure class="poster-slide active" data-poster-slide>
+            <div class="poster-announcement" aria-label="Скоро анонс нового концерта ANDRAW">
+              <span>ANDRAW · LIVE</span>
+              <strong>СКОРО<br>АНОНС</strong>
+              <i aria-hidden="true"></i>
+              <div class="poster-announcement-action">
+                <small>МОСКВА · 2026</small>
+                <a class="poster-cta" href="https://t.me/andraw_theme" target="_blank" rel="noreferrer">Узнать первым <b>↗</b></a>
+              </div>
+            </div>
+            <figcaption><b>НОВАЯ ДАТА</b><span>Следите за обновлениями</span></figcaption>
+          </figure>
+          <figure class="poster-slide" data-poster-slide>
+            <img src="assets/media/event-archive/02-2026-09-19-poster.jpg" alt="Афиша концерта этнической музыки ANDRAW в Noor" loading="lazy">
+            <figcaption><b>19.09.2026</b><span>Noor · этническая музыка</span></figcaption>
+          </figure>
+          <figure class="poster-slide" data-poster-slide>
+            <img src="assets/media/event-archive/03-2026-05-30-poster.jpg" alt="Афиша концерта в темноте 2.0 с участием ANDRAW" loading="lazy">
+            <figcaption><b>30.05.2026</b><span>Концерт в темноте 2.0 · Shanti Place</span></figcaption>
+          </figure>
+          <figure class="poster-slide" data-poster-slide>
+            <img src="assets/media/event-archive/03-2026-04-18-poster.jpg" alt="Афиша концерта ANDRAW в темноте" loading="lazy">
+            <figcaption><b>18.04.2026</b><span>Концерт в темноте</span></figcaption>
+          </figure>
+          <figure class="poster-slide" data-poster-slide>
+            <img src="assets/media/event-archive/07-2026-02-14-poster.jpg" alt="Афиша концерта космической музыки ANDRAW" loading="lazy">
+            <figcaption><b>14.02.2026</b><span>The Hook · космическая музыка</span></figcaption>
+          </figure>
+          <figure class="poster-slide" data-poster-slide>
+            <img src="assets/media/event-archive/08-2025-12-20-poster.jpg" alt="Афиша сольного концерта ANDRAW в Shanti Place" loading="lazy">
+            <figcaption><b>20.12.2025</b><span>Shanti Place · сольный концерт</span></figcaption>
+          </figure>
+          <figure class="poster-slide" data-poster-slide>
+            <img src="assets/media/event-archive/10-2025-09-27-poster.jpg" alt="Афиша концерта ANDRAW и Yougaslava" loading="lazy">
+            <figcaption><b>27.09.2025</b><span>ANDRAW &amp; Yougaslava</span></figcaption>
+          </figure>
+          <figure class="poster-slide" data-poster-slide>
+            <img src="assets/media/event-archive/08-2025-04-13-poster.jpg" alt="Афиша звукового погружения ANDRAW и Екатерины Капитановой" loading="lazy">
+            <figcaption><b>13.04.2025</b><span>Вибрации духа</span></figcaption>
+          </figure>
+          <figure class="poster-slide" data-poster-slide>
+            <img src="assets/media/event-archive/09-2025-02-22-poster.jpg" alt="Афиша сольного концерта ANDRAW в Quintaessentia" loading="lazy">
+            <figcaption><b>22.02.2025</b><span>Quintaessentia · сольный концерт</span></figcaption>
+          </figure>
+          <figure class="poster-slide" data-poster-slide>
+            <img src="assets/media/event-archive/10-2024-07-21-poster.jpg" alt="Афиша сольного концерта ANDRAW в Китай-городе" loading="lazy">
+            <figcaption><b>21.07.2024</b><span>6 хангов · 6 историй</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="poster-controls carousel-controls">
+        <button type="button" data-poster-prev aria-label="Предыдущая афиша">←</button>
+        <div><i data-poster-progress></i></div>
+        <button type="button" data-poster-next aria-label="Следующая афиша">→</button>
+      </div>
+    </section>
+
+    <section class="photos section" id="photos">
+      <div class="section-line">
+        <span>05</span>
+        <p>Фото</p>
+        <div class="slider-count"><b data-photo-current>01</b> / 08</div>
+      </div>
+
+      <div class="photo-carousel reveal">
+        <div class="photo-track" data-photo-track>
+          <figure class="photo-slide photo-slide--editorial active" data-photo-slide>
+            <img src="assets/media/event-archive/01-2026-09-19-live.jpg" alt="ANDRAW на концерте 19 сентября 2026 года" width="1350" height="1800" loading="lazy">
+            <figcaption><b>19.09.2026</b><span>Последнее выступление</span></figcaption>
+          </figure>
+          <figure class="photo-slide photo-slide--portrait" data-photo-slide>
+            <img src="assets/media/event-archive/04-2026-03-28-live.jpg" alt="ANDRAW играет на ханге 28 марта 2026 года" width="1199" height="1800" loading="lazy">
+            <figcaption><b>28.03.2026</b><span>Свет и звук</span></figcaption>
+          </figure>
+          <figure class="photo-slide photo-slide--portrait" data-photo-slide>
+            <img src="assets/media/event-archive/05-2026-03-28-live.jpg" alt="Портрет ANDRAW с концерта" width="1199" height="1800" loading="lazy">
+            <figcaption><b>28.03.2026</b><span>Голос</span></figcaption>
+          </figure>
+          <figure class="photo-slide" data-photo-slide>
+            <img src="assets/media/event-archive/06-2026-03-28-live.jpg" alt="ANDRAW играет на ханге крупным планом" width="1800" height="1199" loading="lazy">
+            <figcaption><b>28.03.2026</b><span>Ханг</span></figcaption>
+          </figure>
+          <figure class="photo-slide photo-slide--portrait" data-photo-slide>
+            <img src="assets/media/event-archive/11-2026-03-28-live.jpg" alt="ANDRAW играет на ханге на сцене" width="853" height="1280" loading="lazy">
+            <figcaption><b>28.03.2026</b><span>Пространство</span></figcaption>
+          </figure>
+          <figure class="photo-slide photo-slide--editorial" data-photo-slide>
+            <img src="assets/media/event-archive/09-2025-12-20-live.jpg" alt="ANDRAW после сольного концерта" width="1350" height="1800" loading="lazy">
+            <figcaption><b>20.12.2025</b><span>После концерта</span></figcaption>
+          </figure>
+          <figure class="photo-slide photo-slide--editorial" data-photo-slide>
+            <img src="assets/media/event-archive/11-2025-05-07-live.jpg" alt="ANDRAW с хангом в пустынном ландшафте" width="869" height="1280" loading="lazy">
+            <figcaption><b>07.05.2025</b><span>Космический странник</span></figcaption>
+          </figure>
+          <figure class="photo-slide photo-slide--portrait" data-photo-slide>
+            <img src="assets/media/event-archive/11-2024-08-20-live.jpg" alt="ANDRAW выступает с хангами на сцене" width="854" height="1280" loading="lazy">
+            <figcaption><b>20.08.2024</b><span>Ханг · сцена</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="photo-controls carousel-controls">
+        <button type="button" data-photo-prev aria-label="Предыдущее фото">←</button>
+        <div><i data-photo-progress></i></div>
+        <button type="button" data-photo-next aria-label="Следующее фото">→</button>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-line">
+        <span>04</span>
+        <p>О музыканте</p>
+        <a class="about-yandex" href="https://music.yandex.ru/artist/12118164" target="_blank" rel="noreferrer" aria-label="ANDRAW в Яндекс Музыке — 580 суперфанов">
+          <b>580</b><span>суперфанов / Яндекс Музыка ↗</span>
+        </a>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-portrait reveal">
+          <img src="assets/site/about-desert.jpg" alt="Музыкант ANDRAW в геометрической маске">
+          <span>голос · ханг · живой звук</span>
+        </div>
+        <div class="about-copy reveal">
+          <div class="about-primary">
+            <p class="about-lead">ANDRAW — космический странник.</p>
+            <div class="about-text">
+              <p>Ханг-исполнитель, соединяющий сильный природный голос с космическим звучанием ханга. Его музыка на стыке нью-эйджа и этно-фьюжна транслирует силу и любовь.</p>
+            </div>
+            <div class="cosmic-language">
+              <div class="cosmic-language-copy"><span>Авторский вокал</span>Вокальные импровизации на космическом языке — без слов, через голос, ритм и состояние.</div>
+              <div class="shamanic-control">
+                <button class="shamanic-play" type="button" aria-label="Воспроизвести вокальную импровизацию"><span>▶</span></button>
+                <small>00:45</small>
+              </div>
+              <audio id="shamanic-audio" src="assets/music/shamanic-andraw.mp3?v=20261001-1" preload="metadata"></audio>
+            </div>
+          </div>
+          <details class="artist-details">
+            <summary><span>Подробнее об артисте</span><i aria-hidden="true">＋</i></summary>
+            <div>
+              <p>Участник этнофестивалей и проекта «Музыка в метро».</p>
+              <p>Флейты · ханги · бубен · горловое пение · живой звук.</p>
+            </div>
+          </details>
+          <details class="concert-format">
+            <summary><span>О концерте</span><i aria-hidden="true">＋</i></summary>
+            <div class="concert-format-body">
+              <p><b>60–90 минут</b><span>Живое выступление без электроники</span></p>
+              <ol>
+                <li><b>I блок</b><span>Флейты · бубен · горловое пение</span></li>
+                <li><b>II блок</b><span>Ханги · голос</span></li>
+              </ol>
+            </div>
+          </details>
+          <a href="#contact">Связаться по выступлению ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tracks section" id="tracks">
+      <div class="section-line">
+        <span>02</span>
+        <p>Музыка</p>
+        <a href="https://music.apple.com/ru/artist/andraw/1734390783" target="_blank" rel="noreferrer">Apple Music ↗</a>
+      </div>
+
+      <div class="track-tabs" role="tablist" aria-label="Разделы аудио">
+        <button class="track-tab active" type="button" role="tab" aria-selected="true" aria-controls="releases-panel" data-track-tab="releases">Релизы</button>
+        <button class="track-tab" type="button" role="tab" aria-selected="false" aria-controls="live-panel" data-track-tab="live">Live / Импровизации</button>
+      </div>
+
+      <div class="track-panel" id="releases-panel" role="tabpanel" data-track-panel="releases">
+      <div class="tracklist reveal">
+        <button class="track" type="button" data-title="East Sun" data-cover="assets/music/6800243025.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/cf/e9/2dcfe9aa-3d35-260f-9269-eb10cc75ce21/mzaf_11220973873433540487.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/6800243025.jpg" alt="Обложка East Sun" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>East Sun</strong><small>сингл · ANDRAW</small></span><span class="track-type">2026 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track" type="button" data-title="Limen Time (Instrumental)" data-cover="assets/music/6785332017.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/93/7f/54937f65-2ab7-6282-0989-a5c80547b4ec/mzaf_5831480064033571010.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/6785332017.jpg" alt="Обложка Limen Time" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Limen Time</strong><small>инструментал · ANDRAW</small></span><span class="track-type">2026 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track" type="button" data-title="Limen" data-cover="assets/music/6785332016.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/c8/51/3ac85118-69dc-30b2-2715-0702f078bd95/mzaf_2871748584739598482.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/6785332016.jpg" alt="Обложка Limen" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Limen</strong><small>сингл · ANDRAW</small></span><span class="track-type">2026 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track" type="button" data-title="Шанти (feat. Kate Florion)" data-cover="assets/music/1846874823.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/da/ae/46daae30-5e34-7002-95b2-327d8fe63b76/mzaf_9209789972147835496.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1846874823.jpg" alt="Обложка Шанти" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Шанти</strong><small>при участии Kate Florion · ANDRAW</small></span><span class="track-type">2025 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track" type="button" data-title="Шанти (instrumental)" data-cover="assets/music/1846874827.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/4d/b9/2e4db9dc-0527-6766-4b56-970012676921/mzaf_7265326021903073223.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1846874827.jpg" alt="Обложка Шанти instrumental" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Шанти · Instrumental</strong><small>ANDRAW</small></span><span class="track-type">2025 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track track-extra" type="button" data-title="Moon" data-cover="assets/music/1834914842.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/74/b4/9474b4c5-6120-39a1-0b43-a3c36983bf20/mzaf_18166469714132131299.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1834914842.jpg" alt="Обложка Moon" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Moon</strong><small>сингл · ANDRAW</small></span><span class="track-type">2025 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track track-extra" type="button" data-title="Cosmic Voyager (Remix)" data-cover="assets/music/1824817611.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/5d/a8/bd5da86e-6cec-5cec-2639-64c8c75547df/mzaf_3248074550408898287.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1824817611.jpg" alt="Обложка Cosmic Voyager Remix" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Cosmic Voyager · Remix</strong><small>ANDRAW</small></span><span class="track-type">2025 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track track-extra" type="button" data-title="Space Voyager" data-cover="assets/music/1821695587.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/23/75/72237547-32b0-f324-4f0b-adf46bcefef6/mzaf_14227063827988335815.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1821695587.jpg" alt="Обложка Space Voyager" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Space Voyager</strong><small>Cosmic Voyager · ANDRAW</small></span><span class="track-type">2025 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track track-extra" type="button" data-title="Cosmic Voyager" data-cover="assets/music/1821695432.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/6b/35/6b6b351d-bac0-5c2f-2223-3e7284090250/mzaf_14479488702850941102.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1821695432.jpg" alt="Обложка Cosmic Voyager" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Cosmic Voyager</strong><small>сингл · ANDRAW</small></span><span class="track-type">2025 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track track-extra" type="button" data-title="Om Namo Bhagavate (Remix)" data-cover="assets/music/1813221631.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/7c/23/5a7c2320-a6f8-1843-1001-d935424f8eb3/mzaf_2530038532714099215.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1813221631.jpg" alt="Обложка Om Namo Bhagavate Remix" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Om Namo Bhagavate · Remix</strong><small>ANDRAW</small></span><span class="track-type">2025 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track track-extra" type="button" data-title="Om Namo Bhagavate (feat. LOVKAYA)" data-cover="assets/music/1779217743.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/36/c0/a736c019-a020-a367-5a60-6eacea860b2e/mzaf_17386299908355079397.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1779217743.jpg" alt="Обложка Om Namo Bhagavate" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Om Namo Bhagavate</strong><small>при участии LOVKAYA · ANDRAW</small></span><span class="track-type">2024 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track track-extra" type="button" data-title="Om (Handpan Instrumental)" data-cover="assets/music/1779217757.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/fb/80/e1fb8065-1121-526a-42ba-75e112a604c0/mzaf_18237544594246436325.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1779217757.jpg" alt="Обложка Om instrumental" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Om</strong><small>инструментал для ханга · ANDRAW</small></span><span class="track-type">2024 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track track-extra" type="button" data-title="Manvantara" data-cover="assets/music/1742467942.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/e3/62/76e3625f-8e5b-6964-22f6-3141f06b81ee/mzaf_7366457806859904396.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1742467942.jpg" alt="Обложка Manvantara" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Manvantara</strong><small>сингл · ANDRAW</small></span><span class="track-type">2024 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track track-extra" type="button" data-title="Unda Fay" data-cover="assets/music/1734266899.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/44/07/58/4407580a-fe06-4ec0-0f42-6c4330a36e24/mzaf_6477986122140860084.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1734266899.jpg" alt="Обложка Unda Fay" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Unda Fay</strong><small>Stay (Handpan Ethnic) · ANDRAW</small></span><span class="track-type">2024 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track track-extra" type="button" data-title="Ecstatic" data-cover="assets/music/1734267171.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/f4/99/02/f499029d-12ba-e6fd-eb53-d04b7717eae7/mzaf_1158317247432386866.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1734267171.jpg" alt="Обложка Ecstatic" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Ecstatic</strong><small>Stay (Handpan Ethnic) · ANDRAW</small></span><span class="track-type">2024 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+        <button class="track track-extra" type="button" data-title="Metamorphose" data-cover="assets/music/1734266644.jpg" data-audio="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/ca/b4/13/cab41347-a333-a672-bfb7-ee2b0779dd8d/mzaf_12007189109404484698.plus.aac.p.m4a">
+          <span class="track-cover"><img src="assets/music/1734266644.jpg" alt="Обложка Metamorphose" loading="lazy"></span><i class="track-play">▶</i>
+          <span class="track-copy"><strong>Metamorphose</strong><small>Stay (Handpan Ethnic) · ANDRAW</small></span><span class="track-type">2024 · 30 сек.</span><span class="track-progress"><i></i></span>
+        </button>
+      </div>
+      <button class="tracks-more" type="button" data-tracks-more><span>Показать ещё</span><i>＋</i></button>
+      </div>
+
+      <div class="track-panel" id="live-panel" role="tabpanel" data-track-panel="live" hidden>
+        <div class="tracklist live-tracklist">
+          <button class="track live-track" type="button" data-title="ANDRAW Theme" data-audio="assets/music/live/andraw-theme.mp3?v=1">
+            <span class="track-cover live-cover"><img src="assets/music/live/01-andraw-theme.png" alt="" loading="lazy"><b>01</b></span><i class="track-play">▶</i>
+            <span class="track-copy"><strong>ANDRAW Theme</strong><small>авторская запись · фрагмент</small></span><span class="track-type">01:30</span><span class="track-progress"><i></i></span>
+          </button>
+          <button class="track live-track" type="button" data-title="Flute + Piano · Live" data-audio="assets/music/live/flute-piano-live.mp3?v=1">
+            <span class="track-cover live-cover"><img src="assets/music/live/02-flute-piano.png" alt="" loading="lazy"><b>02</b></span><i class="track-play">▶</i>
+            <span class="track-copy"><strong>Flute + Piano</strong><small>концертная импровизация · фрагмент</small></span><span class="track-type">01:30</span><span class="track-progress"><i></i></span>
+          </button>
+          <button class="track live-track" type="button" data-title="ANDRAW & Yougaslava · Live" data-audio="assets/music/live/andraw-yougaslava-live.mp3?v=1">
+            <span class="track-cover live-cover"><img src="assets/music/live/03-yougaslava.png" alt="" loading="lazy"><b>03</b></span><i class="track-play">▶</i>
+            <span class="track-copy"><strong>ANDRAW & Yougaslava</strong><small>совместное выступление · фрагмент</small></span><span class="track-type">01:30</span><span class="track-progress"><i></i></span>
+          </button>
+          <button class="track live-track" type="button" data-title="Варежка" data-audio="assets/music/live/varezhka.mp3?v=1">
+            <span class="track-cover live-cover"><img src="assets/music/live/04-varezhka.png" alt="" loading="lazy"><b>04</b></span><i class="track-play">▶</i>
+            <span class="track-copy"><strong>Варежка</strong><small>живая импровизация · фрагмент</small></span><span class="track-type">01:30</span><span class="track-progress"><i></i></span>
+          </button>
+          <button class="track live-track" type="button" data-title="Dark I" data-audio="assets/music/live/dark-01.mp3?v=1">
+            <span class="track-cover live-cover"><img src="assets/music/live/05-dark-01.png" alt="" loading="lazy"><b>05</b></span><i class="track-play">▶</i>
+            <span class="track-copy"><strong>Dark I</strong><small>dark session · фрагмент</small></span><span class="track-type">01:30</span><span class="track-progress"><i></i></span>
+          </button>
+          <button class="track live-track" type="button" data-title="Dark III" data-audio="assets/music/live/dark-03.mp3?v=1">
+            <span class="track-cover live-cover"><img src="assets/music/live/06-dark-03.png" alt="" loading="lazy"><b>06</b></span><i class="track-play">▶</i>
+            <span class="track-copy"><strong>Dark III</strong><small>dark session · фрагмент</small></span><span class="track-type">01:30</span><span class="track-progress"><i></i></span>
+          </button>
+          <button class="track live-track" type="button" data-title="Dark VI" data-audio="assets/music/live/dark-06.mp3?v=1">
+            <span class="track-cover live-cover"><img src="assets/music/live/07-dark-06.png" alt="" loading="lazy"><b>07</b></span><i class="track-play">▶</i>
+            <span class="track-copy"><strong>Dark VI</strong><small>dark session · фрагмент</small></span><span class="track-type">02:00</span><span class="track-progress"><i></i></span>
+          </button>
+          <button class="track live-track" type="button" data-title="Handpan Evening · Live" data-audio="assets/music/live/handpan-evening-live.mp3?v=1">
+            <span class="track-cover live-cover"><img src="assets/music/live/08-handpan-evening.png" alt="" loading="lazy"><b>08</b></span><i class="track-play">▶</i>
+            <span class="track-copy"><strong>Handpan Evening</strong><small>live · фрагмент</small></span><span class="track-type">01:30</span><span class="track-progress"><i></i></span>
+          </button>
+        </div>
+      </div>
+      <audio id="track-audio" preload="metadata"></audio>
+    </section>
+
+    <section class="videos section" id="videos">
+      <div class="section-line">
+        <span>03</span><p>Видео</p>
+        <div class="slider-count"><b data-video-current>01</b> / 17</div>
+      </div>
+
+      <div class="video-window reveal">
+        <div class="video-track" data-video-track>
+          <article class="video-slide active" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-01.jpg" playsinline preload="none" data-src="assets/media/videos/live-01.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Флейта и голос</b><span>живое выступление</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-02.jpg" playsinline preload="none" data-src="assets/media/videos/live-02.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Ханг и голос</b><span>живое выступление</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-03.jpg" playsinline preload="none" data-src="assets/media/videos/live-03.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Живое выступление</b><span>голос · ханг</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-04.jpg" playsinline preload="none" data-src="assets/media/videos/live-04.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Фестивальная сцена</b><span>живой сет</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-05.jpg" playsinline preload="none" data-src="assets/media/videos/live-05.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Свет и звук</b><span>сценическое выступление</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-06.jpg" playsinline preload="none" data-src="assets/media/videos/live-06.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Иммерсивный сет</b><span>ханг · пространство</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-07.jpg" playsinline preload="none" data-src="assets/media/videos/live-07.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>ANDRAW на сцене</b><span>живое выступление</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-08.jpg" playsinline preload="none" data-src="assets/media/videos/live-08.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Ханг на сцене</b><span>живой сет</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-13.jpg" playsinline preload="none" data-src="assets/media/videos/live-13.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Музыка леса</b><span>ханг · космический язык</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-14.jpg" playsinline preload="none" data-src="assets/media/videos/live-14.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Студийная импровизация</b><span>ханг · голос</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-15.jpg" playsinline preload="none" data-src="assets/media/videos/live-15.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Сказка у огня</b><span>ханг · пространство</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-16.jpg" playsinline preload="none" data-src="assets/media/videos/live-16.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>ANDRAW &amp; Yougaslava</b><span>совместное выступление</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-17.jpg" playsinline preload="none" data-src="assets/media/videos/live-17.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Handpan Evening</b><span>камерное выступление</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-09.jpg" playsinline preload="none" data-src="assets/media/videos/live-09.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Голос и пространство</b><span>живое выступление</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-10.jpg" playsinline preload="none" data-src="assets/media/videos/live-10.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>Концертный сет</b><span>ANDRAW · живой звук</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-11.jpg" playsinline preload="none" data-src="assets/media/videos/live-11.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>19.09.2026</b><span>бубен · живой звук</span></div>
+          </article>
+          <article class="video-slide" data-video-slide>
+            <div class="video-media">
+              <video poster="assets/media/video-posters/live-12.jpg" playsinline preload="none" data-src="assets/media/videos/live-12.mp4"></video>
+              <button class="video-play" type="button" aria-label="Запустить видео"><span>▶</span><b>смотреть</b></button>
+            </div>
+            <div class="video-caption"><b>20.09.2026</b><span>ханг · живой звук</span></div>
+          </article>
+        </div>
+      </div>
+      <div class="video-controls carousel-controls">
+        <button type="button" data-video-prev aria-label="Предыдущее видео">←</button>
+        <div><i data-video-progress></i></div>
+        <button type="button" data-video-next aria-label="Следующее видео">→</button>
+      </div>
+    </section>
+
+    <section class="comic section" id="comic">
+      <div class="section-line"><span>06</span><p>Комикс</p><span>истории релизов</span></div>
+      <div class="comic-layout">
+        <div class="comic-copy reveal">
+          <p>Музыка становится визуальной историей.</p>
+          <h2>Архив<br>историй</h2>
+          <div class="comic-stats"><span><b>04</b> главы</span><span><b>38</b> страниц</span></div>
+          <a href="comics.html">Открыть комиксы →</a>
+        </div>
+        <a class="comic-preview reveal" href="comics.html" aria-label="Открыть архив комиксов ANDRAW">
+          <figure class="comic-panel comic-panel--main">
+            <img src="assets/comics-preview/cosmic-01.jpg" alt="Обложка комикса ANDRAW Cosmic Voyager">
+            <figcaption><b>01</b><span>Cosmic Voyager</span></figcaption>
+          </figure>
+          <figure class="comic-panel comic-panel--detail">
+            <img src="assets/comics-preview/cosmic-02.png" alt="Страница комикса Cosmic Voyager">
+            <figcaption><b>02</b><span>Пустыня</span></figcaption>
+          </figure>
+          <figure class="comic-panel comic-panel--shanti">
+            <img src="assets/comics-preview/shanti-01.jpg" alt="Обложка комикса ANDRAW Shanti">
+            <figcaption><b>03</b><span>Shanti</span></figcaption>
+          </figure>
+          <span class="comic-open">Читать все главы <b>↗</b></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact section" id="contact">
+    <div class="section-line"><span>07</span><p>Связаться</p><span>Москва / Земля</span></div>
+    <p class="contact-note">Концерты · коллаборации · фестивали</p>
+    <a class="contact-mail" href="https://t.me/andraw_m" target="_blank" rel="noreferrer">Сотрудничество <span>↗</span></a>
+    <div class="footer-brand">
+      <img src="assets/site/logo-andraw.webp" alt="ANDRAW">
+      <p>Музыка земли и космоса<br>Москва · живой звук</p>
+    </div>
+    <div class="contact-links">
+      <a href="https://t.me/andraw_m" target="_blank" rel="noreferrer">Telegram ↗</a>
+      <a href="https://vk.com/andraw_m" target="_blank" rel="noreferrer">VKontakte ↗</a>
+      <a href="https://www.youtube.com/channel/UCZcAU7LRhPrytUMAlQ03IXw" target="_blank" rel="noreferrer">YouTube ↗</a>
+      <a href="https://www.instagram.com/andraw_music/" target="_blank" rel="noreferrer">Instagram ↗</a>
+    </div>
+    <div class="footer-bottom"><span>ANDRAW © 2026</span><a href="#home">наверх ↑</a></div>
+  </footer>
+
+  <script src="app.js?v=20261001-8"></script>
+</body>
+</html>
