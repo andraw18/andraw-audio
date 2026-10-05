@@ -10,416 +10,416 @@
   },
   "posters": [
     {
-      "image": "assets/media/event-archive/02-2026-09-19-poster.jpg",
-      "alt": "Афиша концерта этнической музыки ANDRAW в Noor",
+      "image": "/assets/media/event-archive/02-2026-09-19-poster.jpg",
       "date": "19.09.2026",
-      "title": "Noor · этническая музыка"
+      "title": "Noor · этническая музыка",
+      "alt": "Афиша концерта этнической музыки ANDRAW в Noor"
     },
     {
-      "image": "assets/media/event-archive/03-2026-05-30-poster.jpg",
-      "alt": "Афиша концерта в темноте 2.0 с участием ANDRAW",
+      "image": "/assets/media/event-archive/03-2026-05-30-poster.jpg",
       "date": "30.05.2026",
-      "title": "Концерт в темноте 2.0 · Shanti Place"
+      "title": "Концерт в темноте 2.0 · Shanti Place",
+      "alt": "Афиша концерта в темноте 2.0 с участием ANDRAW"
     },
     {
-      "image": "assets/media/event-archive/03-2026-04-18-poster.jpg",
-      "alt": "Афиша концерта ANDRAW в темноте",
+      "image": "/assets/media/event-archive/03-2026-04-18-poster.jpg",
       "date": "18.04.2026",
-      "title": "Концерт в темноте"
+      "title": "Концерт в темноте",
+      "alt": "Афиша концерта ANDRAW в темноте"
     },
     {
-      "image": "assets/media/event-archive/07-2026-02-14-poster.jpg",
-      "alt": "Афиша концерта космической музыки ANDRAW",
+      "image": "/assets/media/event-archive/07-2026-02-14-poster.jpg",
       "date": "14.02.2026",
-      "title": "The Hook · космическая музыка"
+      "title": "The Hook · космическая музыка",
+      "alt": "Афиша концерта космической музыки ANDRAW"
     },
     {
-      "image": "assets/media/event-archive/08-2025-12-20-poster.jpg",
-      "alt": "Афиша сольного концерта ANDRAW в Shanti Place",
+      "image": "/assets/media/event-archive/08-2025-12-20-poster.jpg",
       "date": "20.12.2025",
-      "title": "Shanti Place · сольный концерт"
+      "title": "Shanti Place · сольный концерт",
+      "alt": "Афиша сольного концерта ANDRAW в Shanti Place"
     },
     {
-      "image": "assets/media/event-archive/10-2025-09-27-poster.jpg",
-      "alt": "Афиша концерта ANDRAW и Yougaslava",
+      "image": "/assets/media/event-archive/10-2025-09-27-poster.jpg",
       "date": "27.09.2025",
-      "title": "ANDRAW & Yougaslava"
+      "title": "ANDRAW & Yougaslava",
+      "alt": "Афиша концерта ANDRAW и Yougaslava"
     },
     {
-      "image": "assets/media/event-archive/08-2025-04-13-poster.jpg",
-      "alt": "Афиша звукового погружения ANDRAW и Екатерины Капитановой",
+      "image": "/assets/media/event-archive/08-2025-04-13-poster.jpg",
       "date": "13.04.2025",
-      "title": "Вибрации духа"
+      "title": "Вибрации духа",
+      "alt": "Афиша звукового погружения ANDRAW и Екатерины Капитановой"
     },
     {
-      "image": "assets/media/event-archive/09-2025-02-22-poster.jpg",
-      "alt": "Афиша сольного концерта ANDRAW в Quintaessentia",
+      "image": "/assets/media/event-archive/09-2025-02-22-poster.jpg",
       "date": "22.02.2025",
-      "title": "Quintaessentia · сольный концерт"
+      "title": "Quintaessentia · сольный концерт",
+      "alt": "Афиша сольного концерта ANDRAW в Quintaessentia"
     },
     {
-      "image": "assets/media/event-archive/10-2024-07-21-poster.jpg",
-      "alt": "Афиша сольного концерта ANDRAW в Китай-городе",
+      "image": "/assets/media/event-archive/10-2024-07-21-poster.jpg",
       "date": "21.07.2024",
-      "title": "6 хангов · 6 историй"
+      "title": "6 хангов · 6 историй",
+      "alt": "Афиша сольного концерта ANDRAW в Китай-городе"
     }
   ],
   "photos": [
     {
-      "format": "editorial",
-      "image": "assets/media/event-archive/01-2026-09-19-live.jpg",
-      "alt": "ANDRAW на концерте 19 сентября 2026 года",
+      "image": "/assets/media/event-archive/01-2026-09-19-live.jpg",
       "date": "19.09.2026",
-      "title": "Последнее выступление"
+      "title": "Последнее выступление",
+      "alt": "ANDRAW на концерте 19 сентября 2026 года",
+      "format": "editorial"
     },
     {
-      "format": "portrait",
-      "image": "assets/media/event-archive/04-2026-03-28-live.jpg",
+      "image": "/assets/media/event-archive/04-2026-03-28-live.jpg",
+      "date": "28.03.2026",
+      "title": "Свет и звук",
       "alt": "ANDRAW играет на ханге 28 марта 2026 года",
-      "date": "28.03.2026",
-      "title": "Свет и звук"
+      "format": "portrait"
     },
     {
-      "format": "portrait",
-      "image": "assets/media/event-archive/05-2026-03-28-live.jpg",
+      "image": "/assets/media/event-archive/05-2026-03-28-live.jpg",
+      "date": "28.03.2026",
+      "title": "Голос",
       "alt": "Портрет ANDRAW с концерта",
-      "date": "28.03.2026",
-      "title": "Голос"
+      "format": "portrait"
     },
     {
-      "format": "landscape",
-      "image": "assets/media/event-archive/06-2026-03-28-live.jpg",
+      "image": "/assets/media/event-archive/06-2026-03-28-live.jpg",
+      "date": "28.03.2026",
+      "title": "Ханг",
       "alt": "ANDRAW играет на ханге крупным планом",
-      "date": "28.03.2026",
-      "title": "Ханг"
+      "format": "landscape"
     },
     {
-      "format": "portrait",
-      "image": "assets/media/event-archive/11-2026-03-28-live.jpg",
+      "image": "/assets/media/event-archive/11-2026-03-28-live.jpg",
+      "date": "28.03.2026",
+      "title": "Пространство",
       "alt": "ANDRAW играет на ханге на сцене",
-      "date": "28.03.2026",
-      "title": "Пространство"
+      "format": "portrait"
     },
     {
-      "format": "editorial",
-      "image": "assets/media/event-archive/09-2025-12-20-live.jpg",
-      "alt": "ANDRAW после сольного концерта",
+      "image": "/assets/media/event-archive/09-2025-12-20-live.jpg",
       "date": "20.12.2025",
-      "title": "После концерта"
+      "title": "После концерта",
+      "alt": "ANDRAW после сольного концерта",
+      "format": "editorial"
     },
     {
-      "format": "editorial",
-      "image": "assets/media/event-archive/11-2025-05-07-live.jpg",
-      "alt": "ANDRAW с хангом в пустынном ландшафте",
+      "image": "/assets/media/event-archive/11-2025-05-07-live.jpg",
       "date": "07.05.2025",
-      "title": "Космический странник"
+      "title": "Космический странник",
+      "alt": "ANDRAW с хангом в пустынном ландшафте",
+      "format": "editorial"
     },
     {
-      "format": "portrait",
-      "image": "assets/media/event-archive/11-2024-08-20-live.jpg",
-      "alt": "ANDRAW выступает с хангами на сцене",
+      "image": "/assets/media/event-archive/11-2024-08-20-live.jpg",
       "date": "20.08.2024",
-      "title": "Ханг · сцена"
+      "title": "Ханг · сцена",
+      "alt": "ANDRAW выступает с хангами на сцене",
+      "format": "portrait"
     }
   ],
   "releases": [
     {
-      "sortTitle": "Om (Handpan Instrumental)",
-      "cover": "assets/music/1779217757.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/fb/80/e1fb8065-1121-526a-42ba-75e112a604c0/mzaf_18237544594246436325.plus.aac.p.m4a",
       "title": "Om",
+      "sortTitle": "Om (Handpan Instrumental)",
       "subtitle": "инструментал для ханга · ANDRAW",
-      "meta": "2024 · 30 сек."
+      "meta": "2024 · 30 сек.",
+      "cover": "/assets/music/1779217757.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/fb/80/e1fb8065-1121-526a-42ba-75e112a604c0/mzaf_18237544594246436325.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Om Namo Bhagavate (feat. LOVKAYA)",
-      "cover": "assets/music/1779217743.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/36/c0/a736c019-a020-a367-5a60-6eacea860b2e/mzaf_17386299908355079397.plus.aac.p.m4a",
       "title": "Om Namo Bhagavate",
+      "sortTitle": "Om Namo Bhagavate (feat. LOVKAYA)",
       "subtitle": "при участии LOVKAYA · ANDRAW",
-      "meta": "2024 · 30 сек."
+      "meta": "2024 · 30 сек.",
+      "cover": "/assets/music/1779217743.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/36/c0/a736c019-a020-a367-5a60-6eacea860b2e/mzaf_17386299908355079397.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Ecstatic",
-      "cover": "assets/music/1734267171.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/f4/99/02/f499029d-12ba-e6fd-eb53-d04b7717eae7/mzaf_1158317247432386866.plus.aac.p.m4a",
       "title": "Ecstatic",
+      "sortTitle": "Ecstatic",
       "subtitle": "Stay (Handpan Ethnic) · ANDRAW",
-      "meta": "2024 · 30 сек."
+      "meta": "2024 · 30 сек.",
+      "cover": "/assets/music/1734267171.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/f4/99/02/f499029d-12ba-e6fd-eb53-d04b7717eae7/mzaf_1158317247432386866.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Manvantara",
-      "cover": "assets/music/1742467942.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/e3/62/76e3625f-8e5b-6964-22f6-3141f06b81ee/mzaf_7366457806859904396.plus.aac.p.m4a",
       "title": "Manvantara",
+      "sortTitle": "Manvantara",
       "subtitle": "сингл · ANDRAW",
-      "meta": "2024 · 30 сек."
+      "meta": "2024 · 30 сек.",
+      "cover": "/assets/music/1742467942.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/e3/62/76e3625f-8e5b-6964-22f6-3141f06b81ee/mzaf_7366457806859904396.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Cosmic Voyager",
-      "cover": "assets/music/1821695432.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/6b/35/6b6b351d-bac0-5c2f-2223-3e7284090250/mzaf_14479488702850941102.plus.aac.p.m4a",
       "title": "Cosmic Voyager",
+      "sortTitle": "Cosmic Voyager",
       "subtitle": "сингл · ANDRAW",
-      "meta": "2025 · 30 сек."
+      "meta": "2025 · 30 сек.",
+      "cover": "/assets/music/1821695432.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/6b/35/6b6b351d-bac0-5c2f-2223-3e7284090250/mzaf_14479488702850941102.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "East Sun",
-      "cover": "assets/music/6800243025.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/cf/e9/2dcfe9aa-3d35-260f-9269-eb10cc75ce21/mzaf_11220973873433540487.plus.aac.p.m4a",
       "title": "East Sun",
+      "sortTitle": "East Sun",
       "subtitle": "сингл · ANDRAW",
-      "meta": "2026 · 30 сек."
+      "meta": "2026 · 30 сек.",
+      "cover": "/assets/music/6800243025.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/cf/e9/2dcfe9aa-3d35-260f-9269-eb10cc75ce21/mzaf_11220973873433540487.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Шанти (feat. Kate Florion)",
-      "cover": "assets/music/1846874823.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/da/ae/46daae30-5e34-7002-95b2-327d8fe63b76/mzaf_9209789972147835496.plus.aac.p.m4a",
       "title": "Шанти",
+      "sortTitle": "Шанти (feat. Kate Florion)",
       "subtitle": "при участии Kate Florion · ANDRAW",
-      "meta": "2025 · 30 сек."
+      "meta": "2025 · 30 сек.",
+      "cover": "/assets/music/1846874823.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/da/ae/46daae30-5e34-7002-95b2-327d8fe63b76/mzaf_9209789972147835496.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Unda Fay",
-      "cover": "assets/music/1734266899.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/44/07/58/4407580a-fe06-4ec0-0f42-6c4330a36e24/mzaf_6477986122140860084.plus.aac.p.m4a",
       "title": "Unda Fay",
+      "sortTitle": "Unda Fay",
       "subtitle": "Stay (Handpan Ethnic) · ANDRAW",
-      "meta": "2024 · 30 сек."
+      "meta": "2024 · 30 сек.",
+      "cover": "/assets/music/1734266899.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/44/07/58/4407580a-fe06-4ec0-0f42-6c4330a36e24/mzaf_6477986122140860084.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Metamorphose",
-      "cover": "assets/music/1734266644.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/ca/b4/13/cab41347-a333-a672-bfb7-ee2b0779dd8d/mzaf_12007189109404484698.plus.aac.p.m4a",
       "title": "Metamorphose",
+      "sortTitle": "Metamorphose",
       "subtitle": "Stay (Handpan Ethnic) · ANDRAW",
-      "meta": "2024 · 30 сек."
+      "meta": "2024 · 30 сек.",
+      "cover": "/assets/music/1734266644.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/ca/b4/13/cab41347-a333-a672-bfb7-ee2b0779dd8d/mzaf_12007189109404484698.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Moon",
-      "cover": "assets/music/1834914842.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/74/b4/9474b4c5-6120-39a1-0b43-a3c36983bf20/mzaf_18166469714132131299.plus.aac.p.m4a",
       "title": "Moon",
+      "sortTitle": "Moon",
       "subtitle": "сингл · ANDRAW",
-      "meta": "2025 · 30 сек."
+      "meta": "2025 · 30 сек.",
+      "cover": "/assets/music/1834914842.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/74/b4/9474b4c5-6120-39a1-0b43-a3c36983bf20/mzaf_18166469714132131299.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Cosmic Voyager (Remix)",
-      "cover": "assets/music/1824817611.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/5d/a8/bd5da86e-6cec-5cec-2639-64c8c75547df/mzaf_3248074550408898287.plus.aac.p.m4a",
       "title": "Cosmic Voyager · Remix",
+      "sortTitle": "Cosmic Voyager (Remix)",
       "subtitle": "ANDRAW",
-      "meta": "2025 · 30 сек."
+      "meta": "2025 · 30 сек.",
+      "cover": "/assets/music/1824817611.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/5d/a8/bd5da86e-6cec-5cec-2639-64c8c75547df/mzaf_3248074550408898287.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Space Voyager",
-      "cover": "assets/music/1821695587.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/23/75/72237547-32b0-f324-4f0b-adf46bcefef6/mzaf_14227063827988335815.plus.aac.p.m4a",
       "title": "Space Voyager",
+      "sortTitle": "Space Voyager",
       "subtitle": "Cosmic Voyager · ANDRAW",
-      "meta": "2025 · 30 сек."
+      "meta": "2025 · 30 сек.",
+      "cover": "/assets/music/1821695587.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/23/75/72237547-32b0-f324-4f0b-adf46bcefef6/mzaf_14227063827988335815.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Om Namo Bhagavate (Remix)",
-      "cover": "assets/music/1813221631.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/7c/23/5a7c2320-a6f8-1843-1001-d935424f8eb3/mzaf_2530038532714099215.plus.aac.p.m4a",
       "title": "Om Namo Bhagavate · Remix",
+      "sortTitle": "Om Namo Bhagavate (Remix)",
       "subtitle": "ANDRAW",
-      "meta": "2025 · 30 сек."
+      "meta": "2025 · 30 сек.",
+      "cover": "/assets/music/1813221631.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/7c/23/5a7c2320-a6f8-1843-1001-d935424f8eb3/mzaf_2530038532714099215.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Шанти (instrumental)",
-      "cover": "assets/music/1846874827.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/4d/b9/2e4db9dc-0527-6766-4b56-970012676921/mzaf_7265326021903073223.plus.aac.p.m4a",
       "title": "Шанти · Instrumental",
+      "sortTitle": "Шанти (instrumental)",
       "subtitle": "ANDRAW",
-      "meta": "2025 · 30 сек."
+      "meta": "2025 · 30 сек.",
+      "cover": "/assets/music/1846874827.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/4d/b9/2e4db9dc-0527-6766-4b56-970012676921/mzaf_7265326021903073223.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Limen Time (Instrumental)",
-      "cover": "assets/music/6785332017.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/93/7f/54937f65-2ab7-6282-0989-a5c80547b4ec/mzaf_5831480064033571010.plus.aac.p.m4a",
       "title": "Limen Time",
+      "sortTitle": "Limen Time (Instrumental)",
       "subtitle": "инструментал · ANDRAW",
-      "meta": "2026 · 30 сек."
+      "meta": "2026 · 30 сек.",
+      "cover": "/assets/music/6785332017.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/93/7f/54937f65-2ab7-6282-0989-a5c80547b4ec/mzaf_5831480064033571010.plus.aac.p.m4a"
     },
     {
-      "sortTitle": "Limen",
-      "cover": "assets/music/6785332016.jpg",
-      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/c8/51/3ac85118-69dc-30b2-2715-0702f078bd95/mzaf_2871748584739598482.plus.aac.p.m4a",
       "title": "Limen",
+      "sortTitle": "Limen",
       "subtitle": "сингл · ANDRAW",
-      "meta": "2026 · 30 сек."
+      "meta": "2026 · 30 сек.",
+      "cover": "/assets/music/6785332016.jpg",
+      "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/c8/51/3ac85118-69dc-30b2-2715-0702f078bd95/mzaf_2871748584739598482.plus.aac.p.m4a"
     }
   ],
   "live": [
     {
-      "sortTitle": "ANDRAW Theme",
-      "audio": "assets/music/live/andraw-theme.mp3?v=1",
-      "cover": "assets/music/live/01-andraw-theme.png",
       "title": "ANDRAW Theme",
+      "sortTitle": "ANDRAW Theme",
       "subtitle": "авторская запись · фрагмент",
-      "meta": "01:30"
+      "meta": "01:30",
+      "cover": "/assets/music/live/01-andraw-theme.png",
+      "audio": "/assets/music/live/andraw-theme.mp3?v=1"
     },
     {
-      "sortTitle": "Flute + Piano · Live",
-      "audio": "assets/music/live/flute-piano-live.mp3?v=1",
-      "cover": "assets/music/live/02-flute-piano.png",
       "title": "Flute + Piano",
+      "sortTitle": "Flute + Piano · Live",
       "subtitle": "концертная импровизация · фрагмент",
-      "meta": "01:30"
+      "meta": "01:30",
+      "cover": "/assets/music/live/02-flute-piano.png",
+      "audio": "/assets/music/live/flute-piano-live.mp3?v=1"
     },
     {
-      "sortTitle": "ANDRAW & Yougaslava · Live",
-      "audio": "assets/music/live/andraw-yougaslava-live.mp3?v=1",
-      "cover": "assets/music/live/03-yougaslava.png",
       "title": "ANDRAW & Yougaslava",
+      "sortTitle": "ANDRAW & Yougaslava · Live",
       "subtitle": "совместное выступление · фрагмент",
-      "meta": "01:30"
+      "meta": "01:30",
+      "cover": "/assets/music/live/03-yougaslava.png",
+      "audio": "/assets/music/live/andraw-yougaslava-live.mp3?v=1"
     },
     {
-      "sortTitle": "Варежка",
-      "audio": "assets/music/live/varezhka.mp3?v=1",
-      "cover": "assets/music/live/04-varezhka.png",
       "title": "Варежка",
+      "sortTitle": "Варежка",
       "subtitle": "живая импровизация · фрагмент",
-      "meta": "01:30"
+      "meta": "01:30",
+      "cover": "/assets/music/live/04-varezhka.png",
+      "audio": "/assets/music/live/varezhka.mp3?v=1"
     },
     {
-      "sortTitle": "Dark I",
-      "audio": "assets/music/live/dark-01.mp3?v=1",
-      "cover": "assets/music/live/05-dark-01.png",
       "title": "Dark I",
+      "sortTitle": "Dark I",
       "subtitle": "dark session · фрагмент",
-      "meta": "01:30"
+      "meta": "01:30",
+      "cover": "/assets/music/live/05-dark-01.png",
+      "audio": "/assets/music/live/dark-01.mp3?v=1"
     },
     {
-      "sortTitle": "Dark III",
-      "audio": "assets/music/live/dark-03.mp3?v=1",
-      "cover": "assets/music/live/06-dark-03.png",
       "title": "Dark III",
+      "sortTitle": "Dark III",
       "subtitle": "dark session · фрагмент",
-      "meta": "01:30"
+      "meta": "01:30",
+      "cover": "/assets/music/live/06-dark-03.png",
+      "audio": "/assets/music/live/dark-03.mp3?v=1"
     },
     {
-      "sortTitle": "Dark VI",
-      "audio": "assets/music/live/dark-06.mp3?v=1",
-      "cover": "assets/music/live/07-dark-06.png",
       "title": "Dark VI",
+      "sortTitle": "Dark VI",
       "subtitle": "dark session · фрагмент",
-      "meta": "02:00"
+      "meta": "02:00",
+      "cover": "/assets/music/live/07-dark-06.png",
+      "audio": "/assets/music/live/dark-06.mp3?v=1"
     },
     {
-      "sortTitle": "Handpan Evening · Live",
-      "audio": "assets/music/live/handpan-evening-live.mp3?v=1",
-      "cover": "assets/music/live/08-handpan-evening.png",
       "title": "Handpan Evening",
+      "sortTitle": "Handpan Evening · Live",
       "subtitle": "live · фрагмент",
-      "meta": "01:30"
+      "meta": "01:30",
+      "cover": "/assets/music/live/08-handpan-evening.png",
+      "audio": "/assets/music/live/handpan-evening-live.mp3?v=1"
     }
   ],
   "videos": [
     {
-      "poster": "assets/media/video-posters/live-12.jpg",
-      "video": "assets/media/videos/live-12.mp4",
       "title": "20.09.2026",
-      "subtitle": "ханг · живой звук"
+      "subtitle": "ханг · живой звук",
+      "poster": "/assets/media/video-posters/live-12.jpg",
+      "video": "/assets/media/videos/live-12.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-11.jpg",
-      "video": "assets/media/videos/live-11.mp4",
-      "title": "19.09.2026",
-      "subtitle": "бубен · живой звук"
-    },
-    {
-      "poster": "assets/media/video-posters/live-03.jpg",
-      "video": "assets/media/videos/live-03.mp4",
       "title": "Живое выступление",
-      "subtitle": "голос · ханг"
+      "subtitle": "голос · ханг",
+      "poster": "/assets/media/video-posters/live-03.jpg",
+      "video": "/assets/media/videos/live-03.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-10.jpg",
-      "video": "assets/media/videos/live-10.mp4",
+      "title": "19.09.2026",
+      "subtitle": "бубен · живой звук",
+      "poster": "/assets/media/video-posters/live-11.jpg",
+      "video": "/assets/media/videos/live-11.mp4"
+    },
+    {
       "title": "Концертный сет",
-      "subtitle": "ANDRAW · живой звук"
+      "subtitle": "ANDRAW · живой звук",
+      "poster": "/assets/media/video-posters/live-10.jpg",
+      "video": "/assets/media/videos/live-10.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-17.jpg",
-      "video": "assets/media/videos/live-17.mp4",
       "title": "Handpan Evening",
-      "subtitle": "камерное выступление"
+      "subtitle": "камерное выступление",
+      "poster": "/assets/media/video-posters/live-17.jpg",
+      "video": "/assets/media/videos/live-17.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-09.jpg",
-      "video": "assets/media/videos/live-09.mp4",
       "title": "Голос и пространство",
-      "subtitle": "живое выступление"
+      "subtitle": "живое выступление",
+      "poster": "/assets/media/video-posters/live-09.jpg",
+      "video": "/assets/media/videos/live-09.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-13.jpg",
-      "video": "assets/media/videos/live-13.mp4",
       "title": "Музыка леса",
-      "subtitle": "ханг · космический язык"
+      "subtitle": "ханг · космический язык",
+      "poster": "/assets/media/video-posters/live-13.jpg",
+      "video": "/assets/media/videos/live-13.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-14.jpg",
-      "video": "assets/media/videos/live-14.mp4",
       "title": "Студийная импровизация",
-      "subtitle": "ханг · голос"
+      "subtitle": "ханг · голос",
+      "poster": "/assets/media/video-posters/live-14.jpg",
+      "video": "/assets/media/videos/live-14.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-15.jpg",
-      "video": "assets/media/videos/live-15.mp4",
       "title": "Сказка у огня",
-      "subtitle": "ханг · пространство"
+      "subtitle": "ханг · пространство",
+      "poster": "/assets/media/video-posters/live-15.jpg",
+      "video": "/assets/media/videos/live-15.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-16.jpg",
-      "video": "assets/media/videos/live-16.mp4",
       "title": "ANDRAW & Yougaslava",
-      "subtitle": "совместное выступление"
+      "subtitle": "совместное выступление",
+      "poster": "/assets/media/video-posters/live-16.jpg",
+      "video": "/assets/media/videos/live-16.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-08.jpg",
-      "video": "assets/media/videos/live-08.mp4",
       "title": "Ханг на сцене",
-      "subtitle": "живой сет"
+      "subtitle": "живой сет",
+      "poster": "/assets/media/video-posters/live-08.jpg",
+      "video": "/assets/media/videos/live-08.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-04.jpg",
-      "video": "assets/media/videos/live-04.mp4",
       "title": "Фестивальная сцена",
-      "subtitle": "живой сет"
+      "subtitle": "живой сет",
+      "poster": "/assets/media/video-posters/live-04.jpg",
+      "video": "/assets/media/videos/live-04.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-07.jpg",
-      "video": "assets/media/videos/live-07.mp4",
       "title": "ANDRAW на сцене",
-      "subtitle": "живое выступление"
+      "subtitle": "живое выступление",
+      "poster": "/assets/media/video-posters/live-07.jpg",
+      "video": "/assets/media/videos/live-07.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-06.jpg",
-      "video": "assets/media/videos/live-06.mp4",
       "title": "Иммерсивный сет",
-      "subtitle": "ханг · пространство"
+      "subtitle": "ханг · пространство",
+      "poster": "/assets/media/video-posters/live-06.jpg",
+      "video": "/assets/media/videos/live-06.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-05.jpg",
-      "video": "assets/media/videos/live-05.mp4",
       "title": "Свет и звук",
-      "subtitle": "сценическое выступление"
+      "subtitle": "сценическое выступление",
+      "poster": "/assets/media/video-posters/live-05.jpg",
+      "video": "/assets/media/videos/live-05.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-02.jpg",
-      "video": "assets/media/videos/live-02.mp4",
       "title": "Ханг и голос",
-      "subtitle": "живое выступление"
+      "subtitle": "живое выступление",
+      "poster": "/assets/media/video-posters/live-02.jpg",
+      "video": "/assets/media/videos/live-02.mp4"
     },
     {
-      "poster": "assets/media/video-posters/live-01.jpg",
-      "video": "assets/media/videos/live-01.mp4",
       "title": "Флейта и голос",
-      "subtitle": "живое выступление"
+      "subtitle": "живое выступление",
+      "poster": "/assets/media/video-posters/live-01.jpg",
+      "video": "/assets/media/videos/live-01.mp4"
     }
   ],
   "about": {
