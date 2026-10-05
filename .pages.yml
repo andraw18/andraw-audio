@@ -146,5 +146,7 @@ content:
 settings:
   content:
     merge: true
-  commits:
-    message: "Обновление сайта через админку"
+  commit:
+    identity: user
+    templates:
+      update: "Обновление сайта ANDRAW через админку"
