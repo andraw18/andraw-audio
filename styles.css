@@ -249,8 +249,14 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase;
 }
 .hero-tagline::before { width: 32px; height: 1px; margin-bottom: 12px; background: rgba(255,255,255,.42); content: ""; }
-.hero-tagline span { display: block; white-space: nowrap; }
-.hero-tagline span:last-child { color: rgba(255,255,255,.7); font-size: .72em; letter-spacing: .14em; }
+.hero-tagline span {
+  display: block;
+  color: rgba(255,255,255,.72);
+  font-size: .72em;
+  font-weight: 400;
+  letter-spacing: .14em;
+  white-space: nowrap;
+}
 .hero-about-link {
   position: absolute;
   z-index: 5;
