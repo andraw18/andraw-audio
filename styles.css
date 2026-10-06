@@ -335,8 +335,20 @@ main { display: flex; flex-direction: column; }
   font-size: 10px;
   text-transform: uppercase;
 }
-.section-line p { margin: 0; color: #fff; font: 400 clamp(18px, 1.6vw, 24px)/1 var(--display); }
+.section-line h2 { margin: 0; color: #fff; font: 400 clamp(18px, 1.6vw, 24px)/1 var(--display); }
 .section-line a:hover { color: #fff; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 .events { overflow: hidden; }
 .poster-carousel, .photo-carousel, .video-window { margin-right: calc(var(--pad) * -1); }
@@ -704,7 +716,7 @@ main { display: flex; flex-direction: column; }
   .about-yandex { grid-template-columns: auto 84px; gap: 7px; }
   .about-yandex b { font-size: 15px; }
   .about-yandex span { font-size: 7px; }
-  .section-line p { font-size: 16px; }
+  .section-line h2 { font-size: 16px; }
   .poster-slide { flex-basis: min(74vw, 300px); }
   .poster-slide:nth-child(3n + 2) { flex-basis: min(68vw, 276px); }
   .poster-slide.active { transform: translateY(-8px); }
