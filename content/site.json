@@ -332,6 +332,12 @@
       "video": "/assets/media/videos/live-11.mp4"
     },
     {
+      "title": "Студийная импровизация",
+      "subtitle": "ханг · голос",
+      "poster": "/assets/media/video-posters/live-14.jpg",
+      "video": "/assets/media/videos/live-14.mp4"
+    },
+    {
       "title": "Голос и пространство",
       "subtitle": "живое выступление",
       "poster": "/assets/media/video-posters/live-09.jpg",
@@ -360,12 +366,6 @@
       "subtitle": "камерное выступление",
       "poster": "/assets/media/video-posters/live-17.jpg",
       "video": "/assets/media/videos/live-17.mp4"
-    },
-    {
-      "title": "Студийная импровизация",
-      "subtitle": "ханг · голос",
-      "poster": "/assets/media/video-posters/live-14.jpg",
-      "video": "/assets/media/videos/live-14.mp4"
     },
     {
       "title": "Сказка у огня",
