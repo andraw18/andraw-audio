@@ -320,22 +320,10 @@
   ],
   "videos": [
     {
-      "title": "Handpan Evening",
-      "subtitle": "камерное выступление",
-      "poster": "/assets/media/video-posters/live-17.jpg",
-      "video": "/assets/media/videos/live-17.mp4"
-    },
-    {
       "title": "Живое выступление",
       "subtitle": "голос · ханг",
       "poster": "/assets/media/video-posters/live-03.jpg",
       "video": "/assets/media/videos/live-03.mp4"
-    },
-    {
-      "title": "20.09.2026",
-      "subtitle": "ханг · живой звук",
-      "poster": "/assets/media/video-posters/live-12.jpg",
-      "video": "/assets/media/videos/live-12.mp4"
     },
     {
       "title": "19.09.2026",
@@ -356,10 +344,22 @@
       "video": "/assets/media/videos/live-10.mp4"
     },
     {
+      "title": "20.09.2026",
+      "subtitle": "ханг · живой звук",
+      "poster": "/assets/media/video-posters/live-12.jpg",
+      "video": "/assets/media/videos/live-12.mp4"
+    },
+    {
       "title": "Музыка леса",
       "subtitle": "ханг · космический язык",
       "poster": "/assets/media/video-posters/live-13.jpg",
       "video": "/assets/media/videos/live-13.mp4"
+    },
+    {
+      "title": "Handpan Evening",
+      "subtitle": "камерное выступление",
+      "poster": "/assets/media/video-posters/live-17.jpg",
+      "video": "/assets/media/videos/live-17.mp4"
     },
     {
       "title": "Студийная импровизация",
