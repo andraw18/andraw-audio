@@ -249,7 +249,7 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase;
 }
 .hero-tagline::before { width: 32px; height: 1px; margin-bottom: 12px; background: rgba(255,255,255,.42); content: ""; }
-.hero-tagline small { margin-bottom: 4px; color: rgba(255,255,255,.56); font: 500 8px/1 var(--body); letter-spacing: .18em; text-transform: uppercase; }
+.hero-tagline small { margin-bottom: 4px; color: rgba(255,255,255,.5); font: 500 7px/1 var(--body); letter-spacing: .2em; text-transform: uppercase; }
 .hero-tagline span {
   display: block;
   color: rgba(255,255,255,.72);
@@ -710,7 +710,7 @@ main { display: flex; flex-direction: column; }
   .hero-face img { object-position: left center; }
   .hero-tagline { left: 18px; bottom: 140px; gap: 3px; font-size: 15px; }
   .hero-tagline::before { width: 22px; margin-bottom: 8px; }
-  .hero-tagline small { margin-bottom: 3px; font-size: 7px; }
+  .hero-tagline small { margin-bottom: 3px; font-size: 6px; }
   .hero-about-link { right: 18px; bottom: 139px; width: min(38vw, 155px); gap: 8px 10px; padding-bottom: 9px; }
   .hero-about-link small { font-size: 6px; }
   .hero-about-link span { font-size: 10px; }

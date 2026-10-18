@@ -3,6 +3,45 @@ const escapeHTML = (value = '') => String(value).replace(/[&<>"]/g, (character) 
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;',
 }[character]));
 const safeUrl = (value = '') => /^(https?:\/\/|\/?assets\/)/i.test(String(value)) ? escapeHTML(value) : '';
+const posterMonths = new Map([
+  ['ЯНВАРЬ', 0], ['ФЕВРАЛЬ', 1], ['МАРТ', 2], ['АПРЕЛЬ', 3],
+  ['МАЙ', 4], ['ИЮНЬ', 5], ['ИЮЛЬ', 6], ['АВГУСТ', 7],
+  ['СЕНТЯБРЬ', 8], ['ОКТЯБРЬ', 9], ['НОЯБРЬ', 10], ['ДЕКАБРЬ', 11],
+]);
+const getPosterTiming = (value = '') => {
+  const normalized = String(value).trim().toUpperCase().replace(/Ё/g, 'Е');
+  const exactDate = normalized.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+  if (exactDate) {
+    const [, day, month, year] = exactDate.map(Number);
+    const startsAt = new Date(year, month - 1, day);
+    if (startsAt.getFullYear() !== year || startsAt.getMonth() !== month - 1 || startsAt.getDate() !== day) return null;
+    return { startsAt, expiresAt: new Date(year, month - 1, day, 23, 59, 59, 999) };
+  }
+
+  const monthDate = normalized.match(/^([А-Я]+)\s+(\d{4})$/);
+  if (!monthDate || !posterMonths.has(monthDate[1])) return null;
+  const month = posterMonths.get(monthDate[1]);
+  const year = Number(monthDate[2]);
+  return {
+    startsAt: new Date(year, month, 1),
+    expiresAt: new Date(year, month + 1, 0, 23, 59, 59, 999),
+  };
+};
+const preparePosters = (posters) => {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const scheduled = posters.map((poster, index) => ({ poster, index, timing: getPosterTiming(poster.date) }));
+  const upcoming = scheduled
+    .filter(({ timing }) => timing && timing.expiresAt >= today)
+    .sort((a, b) => a.timing.startsAt - b.timing.startsAt || a.index - b.index);
+
+  if (!upcoming.length) return { posters, showAnnouncement: true };
+  const upcomingIndexes = new Set(upcoming.map(({ index }) => index));
+  return {
+    posters: [...upcoming.map(({ poster }) => poster), ...scheduled.filter(({ index }) => !upcomingIndexes.has(index)).map(({ poster }) => poster)],
+    showAnnouncement: false,
+  };
+};
 const managedContent = await fetch(`content/site.json?v=${Date.now()}`)
   .then((response) => response.ok ? response.json() : null)
   .catch(() => null);
@@ -11,9 +50,10 @@ if (managedContent) {
   const announcement = managedContent.announcement || {};
   const posterTrackElement = document.querySelector('[data-poster-track]');
   if (posterTrackElement && Array.isArray(managedContent.posters)) {
+    const preparedPosters = preparePosters(managedContent.posters);
     const announcementTitle = escapeHTML(announcement.title || 'СКОРО АНОНС').replace(' ', '<br>');
     posterTrackElement.innerHTML = `
-      <figure class="poster-slide active" data-poster-slide>
+      ${preparedPosters.showAnnouncement ? `<figure class="poster-slide active" data-poster-slide>
         <div class="poster-announcement" aria-label="Скоро анонс нового концерта ANDRAW">
           <span>${escapeHTML(announcement.eyebrow || 'ANDRAW · LIVE')}</span>
           <strong>${announcementTitle}</strong><i aria-hidden="true"></i>
@@ -22,14 +62,15 @@ if (managedContent) {
           </div>
         </div>
         <figcaption><b>${escapeHTML(announcement.date || '')}</b><span>${escapeHTML(announcement.subtitle || '')}</span></figcaption>
-      </figure>
-      ${managedContent.posters.map((poster) => `
-        <figure class="poster-slide" data-poster-slide>
+      </figure>` : ''}
+      ${preparedPosters.posters.map((poster, index) => `
+        <figure class="poster-slide${!preparedPosters.showAnnouncement && index === 0 ? ' active' : ''}" data-poster-slide>
           <img src="${safeUrl(poster.image)}" alt="${escapeHTML(poster.alt || poster.title)}" loading="lazy">
           <figcaption><b>${escapeHTML(poster.date)}</b><span>${escapeHTML(poster.title)}</span></figcaption>
         </figure>`).join('')}`;
     const counter = document.querySelector('[data-poster-current]')?.parentElement;
-    if (counter) counter.innerHTML = `<b data-poster-current>01</b> / ${String(managedContent.posters.length + 1).padStart(2, '0')}`;
+    const posterCount = preparedPosters.posters.length + Number(preparedPosters.showAnnouncement);
+    if (counter) counter.innerHTML = `<b data-poster-current>01</b> / ${String(posterCount).padStart(2, '0')}`;
   }
 
   const photoTrackElement = document.querySelector('[data-photo-track]');
