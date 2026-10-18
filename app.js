@@ -58,7 +58,7 @@ if (managedContent) {
           <span>${escapeHTML(announcement.eyebrow || 'ANDRAW · LIVE')}</span>
           <strong>${announcementTitle}</strong><i aria-hidden="true"></i>
           <div class="poster-announcement-action"><small>${escapeHTML(announcement.location || '')}</small>
-            <a class="poster-cta" href="${safeUrl(announcement.url)}" target="_blank" rel="noreferrer">${escapeHTML(announcement.button || 'Узнать первым')} <b>↗</b></a>
+            <a class="poster-cta" href="${safeUrl(announcement.url)}" target="_blank" rel="noreferrer">${escapeHTML(announcement.button || 'Узнать первым')} <b class="external-link-icon" aria-hidden="true"></b></a>
           </div>
         </div>
         <figcaption><b>${escapeHTML(announcement.date || '')}</b><span>${escapeHTML(announcement.subtitle || '')}</span></figcaption>
