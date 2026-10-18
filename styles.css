@@ -249,6 +249,7 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase;
 }
 .hero-tagline::before { width: 32px; height: 1px; margin-bottom: 12px; background: rgba(255,255,255,.42); content: ""; }
+.hero-tagline small { margin-bottom: 4px; color: rgba(255,255,255,.56); font: 500 8px/1 var(--body); letter-spacing: .18em; text-transform: uppercase; }
 .hero-tagline span {
   display: block;
   color: rgba(255,255,255,.72);
@@ -257,6 +258,9 @@ img { display: block; max-width: 100%; }
   letter-spacing: .14em;
   white-space: nowrap;
 }
+.hero-tagline i { display: inline-block; margin-left: .4em; color: rgba(255,255,255,.46); font-size: .72em; transition: color .25s, transform .25s; }
+.hero-tagline:hover span { color: #fff; }
+.hero-tagline:hover i { color: #fff; transform: translate(3px, 3px); }
 .hero-about-link {
   position: absolute;
   z-index: 5;
@@ -701,11 +705,12 @@ main { display: flex; flex-direction: column; }
   .hero-platforms { top: 32px; left: 18px; right: 18px; font-size: 10px; }
   .yandex-link img { width: min(29vw, 116px); }
   .bandlink-link img { width: min(25vw, 98px); }
-  .hero-portraits { width: 100%; grid-template-columns: 51% 49%; }
+  .hero-portraits { width: 90vw; grid-template-columns: 51% 49%; }
   .hero-mask img { object-position: right center; }
   .hero-face img { object-position: left center; }
-  .hero-tagline { left: 18px; bottom: 140px; gap: 3px; font-size: 13px; }
+  .hero-tagline { left: 18px; bottom: 140px; gap: 3px; font-size: 15px; }
   .hero-tagline::before { width: 22px; margin-bottom: 8px; }
+  .hero-tagline small { margin-bottom: 3px; font-size: 7px; }
   .hero-about-link { right: 18px; bottom: 139px; width: min(38vw, 155px); gap: 8px 10px; padding-bottom: 9px; }
   .hero-about-link small { font-size: 6px; }
   .hero-about-link span { font-size: 10px; }
