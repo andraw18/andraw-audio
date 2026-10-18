@@ -789,7 +789,7 @@ main { display: flex; flex-direction: column; }
   .hero-face img { left: 0; object-position: left center; }
   .hero-tagline { left: 18px; bottom: 140px; gap: 3px; font-size: 17px; }
   .hero-tagline::before { width: 22px; margin-bottom: 8px; }
-  .hero-tagline small { margin-bottom: 3px; font-size: 7px; }
+  .hero-tagline small { margin-bottom: 3px; font-size: 9px; }
   .hero-tagline span { font-size: 1em; line-height: 1.08; letter-spacing: .08em; }
   .hero-about-link { right: 18px; bottom: 139px; width: min(38vw, 155px); gap: 8px 10px; padding-bottom: 9px; }
   .hero-about-link small { font-size: 6px; }
