@@ -705,9 +705,10 @@ main { display: flex; flex-direction: column; }
   .hero-platforms { top: 32px; left: 18px; right: 18px; font-size: 10px; }
   .yandex-link img { width: min(29vw, 116px); }
   .bandlink-link img { width: min(25vw, 98px); }
-  .hero-portraits { width: 90vw; grid-template-columns: 51% 49%; }
-  .hero-mask img { object-position: right center; }
-  .hero-face img { object-position: left center; }
+  .hero-portraits { width: 86vw; grid-template-columns: 48% 52%; }
+  .hero-portraits img { position: absolute; top: 50%; width: auto; max-width: none; height: 88%; transform: translateY(-50%); }
+  .hero-mask img { right: 0; object-position: right center; }
+  .hero-face img { left: 0; object-position: left center; }
   .hero-tagline { left: 18px; bottom: 140px; gap: 3px; font-size: 15px; }
   .hero-tagline::before { width: 22px; margin-bottom: 8px; }
   .hero-tagline small { margin-bottom: 3px; font-size: 7px; }
